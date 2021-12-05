@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* General */
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #F2F2F2;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/* Card */
+.card__container{
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 40px;
+    /* position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    padding: 40px 50px;
+    min-width: 350px;
+}
+.first{
+    background-color: #E38826;
+    border-radius: 10px 0 0 10px;
+}
+.second{
+    background-color: #006970;
+}
+.third{
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+}
+.car__icon{
+    width: 60px;
+    height: 38px;
+}
+.card__name{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    margin: 40px 0;
+}
+.card__text{
+    line-height: 28px;
+    text-align: left;
+}
+.card__btn{
+    border: none;
+    background-color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 84px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition:  all 0.4s ease-in-out;
+}
+.first .card__btn{
+    color: #E38826;
+}
+
+.second .card__btn{
+    color: #006970;
+}
+.third .card__btn{
+    color:#004241;
+}
+.card__btn:hover{
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #fff;
+}
+@media (max-width:996px){
+    .card__container{
+        flex-wrap: wrap;
+        max-width: 250px;
+    }
+    .first{
+        background-color: #E38826;
+        border-radius: 10px 10px 0 0;
+    }
+    .third{
+        background-color: #004241;
+        border-radius: 0 0 10px 10px;
+    }
+
+}
